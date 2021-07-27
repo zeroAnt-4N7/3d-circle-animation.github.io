@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+}
+
+@keyframes rec-rotation{
+    0%{transform: rotateZ(0) rotateY(0);}
+    50%{transform: rotateZ(180deg) rotateY(180deg);}
+    100%{transform: rotateZ(360deg) rotateY(360deg);}
+}
+@keyframes rec-rotation1{
+    0%{transform: rotateZ(45deg) rotateY(45deg);}
+    50%{transform: rotateZ(225deg) rotateY(225deg);}
+    100%{transform: rotateZ(405deg) rotateY(405deg);}
+}
+@keyframes rec-rotation2{
+     0%{transform: rotateZ(90deg) rotateY(90deg);}
+    50%{transform: rotateZ(270deg) rotateY(270deg);}
+    100%{transform: rotateZ(450deg) rotateY(450deg);}
+}
+@keyframes rec-rotation3{
+     0%{transform: rotateZ(135deg) rotateY(135deg);}
+    50%{transform: rotateZ(315deg) rotateY(315deg);}
+    100%{transform: rotateZ(495deg) rotateY(495deg);}
+}
+@keyframes rec-rotation4{
+     0%{transform: rotateZ(180deg) rotateY(180deg);}
+    50%{transform: rotateZ(315deg) rotateY(360deg);}
+    100%{transform: rotateZ(540deg) rotateY(540deg);}
+}
+
+#anim-body{
+    width:30;
+    height: 300px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    
+}
+
+.rotation-square{
+    width: 280px;
+    height: 280px;
+    filter: blur(40%);
+    border: 20px solid green;
+    border-radius: 50%;
+    animation: rec-rotation 5s linear 0s infinite;
+}
+
+#square1{
+    width:240px;
+    height:240px;
+    border: 20px solid green;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    animation: rec-rotation1 5s linear 0s infinite;
+}
+
+#square2{
+    width:200px;
+    height:200px;
+    border: 20px solid green;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    animation: rec-rotation2 5s linear 0s infinite;
+}
+#square3{
+    width:160px;
+    height:160px;
+    border: 20px solid green;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    animation: rec-rotation3 5s linear 0s infinite;
+}
+#square4{
+    width:160px;
+    height:160px;
+    border: none;
+    border-radius: 50%;
+    background-color: green;
+    margin: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    animation: rec-rotation4 5s linear 0s infinite;
+}
